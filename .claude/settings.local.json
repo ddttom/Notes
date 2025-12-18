@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint:md:*)",
+      "Bash(npm run lint:md:fix:*)",
+      "Bash(git push)"
+    ]
+  }
+}
