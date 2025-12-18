@@ -1,4 +1,4 @@
-Vibe coding - backend
+# Vibe coding - backend
 
 Make sure backend is highly modular and intermediate through a simple message queue with a very structured message api. Design this before doing any backend.
 
@@ -24,6 +24,6 @@ the developer will focus one by one on each backend function. And send separate 
 
 There must be an index of backend functions and the state and of each, dummy, erroring, under Dev, potential release, under user test and release., also reverted.
 
-Connectors are used by by the backend, not the front end. Connectors can only be executed if the tenant has subscribed to the connector. The connector will return a not subscribed error, this should be passed back to the caller. These functions must be described in the index. The developed will have a route for handling not subscribed and will produce better messaging to the end usrr
+Connectors are used by by the backend, not the front end. Connectors can only be executed if the tenant has subscribed to the connector. The connector will return a not subscribed error, this should be passed back to the caller. These functions must be described in the index. The developed will have a route for handling not subscribed and will produce better messaging to the end user
 
 The system must track and release these functions according to the users request. Create a folder of potential backend and a build process that allows the developer to select what will be released to the environment. We will have local Dev. Local test, local qa. Hosted test. Hosted live.

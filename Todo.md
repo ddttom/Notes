@@ -1,4 +1,4 @@
-To do
+# To do
 
 Add Git ignore to agentsetup
 
@@ -11,4 +11,4 @@ Invest in gate semgrep and codeql. Owasp zap
 
 Use postman like to test.
 
-Review code in a sperate AI
+Review code in a separate AI

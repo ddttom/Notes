@@ -1,4 +1,4 @@
-Tad
+# Tad
 
 Must be Subscription model, 1 day a week on advance. Deducted from next bill. Even if bill is months later. Pay flight and hotel travel expenses directly in advance. No need for a markup from my admin.
 

@@ -1,6 +1,6 @@
-Prd updates
+# Prd updates
 
-Tom expense tracker. Chargeable or non chargeble per jib
+Tom expense tracker. Chargeable or non chargeable per jib
 
 Bill of materials tracker per job
 

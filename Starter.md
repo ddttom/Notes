@@ -1,4 +1,4 @@
-Starter
+# Starter
 
 Always have a design rules, whitelabelable. Button shapes sizes. Breakpoints.
 
@@ -12,7 +12,7 @@ Config variables at top of code. No hard coded text or constants.
 
 Commenting rules must be added
 
-Look for opportunity to add to core library when functions are shared. Simplicity over complexity. Maintanability over clever code.
+Look for opportunity to add to core library when functions are shared. Simplicity over complexity. Maintainability over clever code.
 
 Create two folders. Frontend and backend.
 

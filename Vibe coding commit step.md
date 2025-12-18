@@ -1,4 +1,4 @@
-Vibe coding - step commit
+# Vibe coding - step commit
 
 The command will be step commit
 Git commit
