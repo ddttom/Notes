@@ -1,7 +1,24 @@
-# Tad
+# Business Model and Engagement Notes
 
-Must be Subscription model, 1 day a week on advance. Deducted from next bill. Even if bill is months later. Pay flight and hotel travel expenses directly in advance. No need for a markup from my admin.
+## Subscription Model
 
-I have a network of trusted associates, which I can call on. Content /coding / consultation
+### Payment Terms
+- Subscription-based model required
+- Advance payment: 1 day per week
+- Deducted from next invoice (even if months later)
 
-After I have proved myself add me as eu/uk contact
+### Travel Expenses
+- Flight and hotel expenses paid directly in advance
+- No markup required from administrative overhead
+
+## Network and Resources
+
+### Associate Network
+Available network of trusted associates for:
+- Content creation
+- Coding tasks
+- Consultation services
+
+## Future Goals
+
+- After proving value, request addition as EU/UK contact

@@ -1,35 +1,84 @@
-# Starter
+# Project Starter Guidelines
 
-Always have a design rules, whitelabelable. Button shapes sizes. Breakpoints.
+## Design System
 
-Coding standards
+### Whitelabel Requirements
+- Maintain design rules that are whitelabelable
+- Define button shapes and sizes
+- Define responsive breakpoints
+- Use EDS shim with plusplus additions
 
-Simple plain javascript. Do not add third party  libraries without the users explicit permission
+## Coding Standards
 
-Css 3 with variable, master styles. Block level additions and changes. Block level must know about master.
+### JavaScript
+- Use simple, plain JavaScript
+- **Do not add third-party libraries without explicit user permission**
+- Simplicity over complexity
+- Maintainability over clever code
 
-Config variables at top of code. No hard coded text or constants.
+### CSS
+- CSS3 with variables
+- Use master styles
+- Block-level additions and changes must be aware of master styles
+- Block-level components must reference master styles
 
-Commenting rules must be added
+### Code Organization
+- Configuration variables at top of code
+- **No hard-coded text or constants**
+- Look for opportunities to add shared functions to core library
+- Core library is shareable between backend and frontend
 
-Look for opportunity to add to core library when functions are shared. Simplicity over complexity. Maintainability over clever code.
+### Commenting
+- Commenting rules must be added (TODO: Define standard)
 
-Create two folders. Frontend and backend.
+## Project Structure
 
-Create message q folder, msg q implementation should be graphql with action commands. The front end should not have knowledge of which connectors are in use, just knows that connectors are available and the expected schema
+### Required Folders
 
-The backend should not know what the front end will do with result. It strictly follows the schema. The schema index is where the developer and the AI collaborate to  build the APIs, the msq q and the connectors.
+#### 1. Frontend
+- Frontend application code
+- Should not have knowledge of which connectors are in use
+- Only knows that connectors are available and the expected schema
 
-Create api folder
+#### 2. Backend
+- Backend services and APIs
+- Should not know what the frontend will do with results
+- Strictly follows the schema
+- UI-agnostic implementation
 
-We want to avoid sql migration problems use a no-sql dB approach
+#### 3. Message Queue (msg-q)
+- Message queue implementation using GraphQL with action commands
+- Frontend communicates through this layer
+- Backend processes messages through this layer
 
-Consider a Refactoring command
+#### 4. API
+- API definitions and schema
+- **The schema index is where developer and AI collaborate to build APIs**
+- Message queue and connectors communicate through this layer
 
-Attribution in git
+#### 5. Core Library
+- Shared utilities and functions
+- Shareable between backend and frontend
+- Repository for common functionality
 
-Core library is shareable between back end  and front end
+## Frontend-Backend Separation
 
-Use EDS shim
+### Communication Principles
+- Frontend only knows connectors are available and expected schema
+- Backend strictly follows schema without UI knowledge
+- Schema index is the collaboration point between developer and AI
 
-Add plusplus to shim.
+## Database Approach
+
+- Use NoSQL database approach to avoid SQL migration problems
+- Provides flexibility and easier schema evolution
+
+## Development Practices
+
+### Git Attribution
+- Ensure proper attribution in all git commits
+- Especially important for AI-assisted code
+
+### Refactoring
+- Consider implementing a refactoring command
+- Regularly review opportunities to improve code structure

@@ -1,29 +1,108 @@
-# Vibe coding - backend
+# Backend Architecture Guidelines
 
-Make sure backend is highly modular and intermediate through a simple message queue with a very structured message api. Design this before doing any backend.
+## Core Principles
 
-All backend code must be thread safe, injection proof and may share core library with front end
+### Architecture Design
+Backend must be highly modular and communicate through a simple message queue with a structured message API. **Design the message API before implementing any backend code.**
 
-Backend should be multitenant and UI agnostic. Communicating with the message api with structured json.
+### Code Requirements
+- All backend code must be **thread-safe**
+- All backend code must be **injection-proof**
+- Backend may share core library with frontend
+- Backend should be **multi-tenant** and **UI-agnostic**
+- Communication via message API with structured JSON
 
-Each tenant has a separate dB. Avoiding leakage. Each tenant has a global Config json object. Used for Config and overriding whitelabel
+## Multi-Tenancy
 
-The initial build of the prototype us to be dummy backend functions that return this is a dummy - to be implemented. The backend should have the current full set of actions in a schema. The index is the schema. The initial implementation is returning "to be implemented" each action should be marked #TODO.  Each api/connector/agent will log all errors to a central log. All action message will be logged to a tenant log. The tenant log should be cycled at midnight and retained for one week.
+### Database Isolation
+- Each tenant has a separate database (prevents data leakage)
+- Each tenant has a global Config JSON object for:
+  - Configuration settings
+  - Whitelabel overrides
 
-The connector must use a data transformation object so that the connector can be traced and debugger.
+### Access Control
+- Multiple owners possible per tenant
+- One admin owner can delegate access to secondary owners
+- Admin functions restricted to tenant owners only
+- Developer admin can be promoted to super admin on any tenant
+- All super admin actions require full audit logging
 
-All actions must be checked for sql injections or bad actor intents
+## Prototype Development Strategy
 
-Ensure that admin functions can only be used by the tenant owner, there should be possibilities of multiple owners per tenant. There will be one admin owner who can delegate access to secondary owners.
+### Initial Implementation
+1. Create dummy backend functions returning "to be implemented"
+2. Define full set of actions in schema (the index IS the schema)
+3. Mark each action with #TODO
+4. Initial implementation returns "to be implemented" message
 
-The developer admin can be promoted to super admin on any tenant and perform the important tasks, with full audit logging to the admin log.
+### Iterative Development
+- Developer focuses on one backend function at a time
+- Separate instructions provided for each function implementation
 
-A separate action channel should be created for the tenant and the developer allowing administration commands and dashboard. Initial implementation is to be as dummy with todo
+## Logging Architecture
 
-the developer will focus one by one on each backend function. And send separate instructions
+### Central Error Log
+- All API/connector/agent errors logged centrally
 
-There must be an index of backend functions and the state and of each, dummy, erroring, under Dev, potential release, under user test and release., also reverted.
+### Tenant Log
+- All action messages logged to tenant-specific log
+- Logs cycled daily at midnight
+- Logs retained for one week
 
-Connectors are used by by the backend, not the front end. Connectors can only be executed if the tenant has subscribed to the connector. The connector will return a not subscribed error, this should be passed back to the caller. These functions must be described in the index. The developed will have a route for handling not subscribed and will produce better messaging to the end user
+### Admin Log
+- Separate action channel for tenant and developer administration
+- Dashboard and administration commands
+- Full audit trail for admin operations
 
-The system must track and release these functions according to the users request. Create a folder of potential backend and a build process that allows the developer to select what will be released to the environment. We will have local Dev. Local test, local qa. Hosted test. Hosted live.
+## Connector System
+
+### Connector Rules
+- Connectors used by backend only (not frontend)
+- Connectors can only execute if tenant has subscribed
+- Return "not subscribed" error if tenant lacks subscription
+- Error should be passed back to caller
+- All connectors described in the index
+
+### Data Transformation
+- Connectors must use data transformation objects
+- Enables tracing and debugging capabilities
+
+### Error Handling
+- Developer implements route for handling "not subscribed" errors
+- Produces user-friendly messaging to end users
+
+## Security
+
+### Input Validation
+- All actions must be checked for SQL injections
+- All actions must be checked for bad actor intents
+- Never trust user input
+
+## Function State Tracking
+
+### State Management
+Maintain an index of all backend functions with their current state:
+
+- **dummy** - Placeholder implementation
+- **erroring** - Has known errors
+- **under dev** - Actively being developed
+- **potential release** - Ready for testing consideration
+- **under user test** - Being tested by users
+- **release** - Deployed to production
+- **reverted** - Rolled back from production
+
+## Build and Deployment
+
+### Environment Structure
+Create separate deployment environments:
+- Local Dev
+- Local Test
+- Local QA
+- Hosted Test
+- Hosted Live
+
+### Build Process
+- Maintain folder of potential backend code
+- Build process allows developer to select functions for release
+- Track and release functions according to user requests
+- Selective deployment based on function state

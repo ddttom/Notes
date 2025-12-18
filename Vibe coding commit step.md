@@ -1,16 +1,48 @@
-# Vibe coding - step commit
+# Git Workflow - Step Commit Process
 
-The command will be step commit
-Git commit
-Run lint and fix all errors
-Git commit.
-Check last modification dates of README.md and Claude.md and changelog.md, consider modification to those files based on changes to the files since that date, using changelog.md to assist if changes in the past.
-Review project document and files mentioned in CLAUDE.md
+The "step commit" workflow ensures systematic commits with proper documentation and quality checks.
 
-Git commit changes
+## Step-by-Step Process
 
-Update LEARNINGS.md create it if necessary. This file contains everything that the AI assistant struggled to understand in this session.
+### 1. Initial Commit
+- Commit all current code changes
+- Use descriptive commit message
 
-Update Projectstate.md create if necessary as a current, not history artefact.
+### 2. Linting
+- Run lint on all changed files
+- Fix all linting errors
+- Commit lint fixes separately
 
-Then update CHANGELOG.md commit and push
+### 3. Documentation Review
+- Check last modification dates of:
+  - README.md
+  - CLAUDE.md
+  - CHANGELOG.md
+- Review if these files need updates based on recent changes
+- Use CHANGELOG.md to understand past changes if needed
+- Review all project documents mentioned in CLAUDE.md
+
+### 4. Documentation Updates
+- Commit any documentation changes
+
+### 5. Learning Documentation
+- Update or create LEARNINGS.md
+- Document everything the AI assistant struggled to understand in this session
+- This helps improve future AI interactions
+
+### 6. Project State
+- Update or create PROJECTSTATE.md
+- Document current state only (not historical)
+- Keep this as a snapshot of current implementation status
+
+### 7. Changelog
+- Update CHANGELOG.md with all changes made
+- Follow chronological order
+
+### 8. Final Commit and Push
+- Commit changelog updates
+- Push all commits to remote
+
+## Attribution
+
+Ensure proper attribution in all git commits, especially when code is AI-assisted.

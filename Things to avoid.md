@@ -1,9 +1,50 @@
-# Things to avoid
+# UI/UX Anti-Patterns for AI Interaction
 
-Toasts, fades, item removal, below the fold error messages. Hiding divs until previous dive complete. Give error messages as you go not after submit. Have a clear response page not just a spa. Avoid too much spa. Not possible for a human focused site. Know if you are being used by an AI bot. Adjust your UI to accelerate AI engagement. Personalisation for robots.
+This document outlines UI/UX patterns that should be avoided when designing for AI agent interaction.
 
-Animation for AI is not great experience.
+## Avoid These Patterns
 
-Floating loading and spinners are not good UI for an AI.
+### Hidden or Delayed Feedback
+- **Toasts and fades** - Information disappears before AI can process it
+- **Below-the-fold error messages** - AI may not scroll to find errors
+- **Hiding divs until previous div completes** - Creates confusion about page state
+- **Error messages only after submit** - Provide validation errors as users go
+- **Information hidden in disclaimers** - AI cannot see hidden content
 
-Don't assume an AI agent will read your console. Anything you need an AI to know should be visible and obvious. Hide nothing in disclaimers.
+### Animation and Loading Indicators
+- **Animations** - Not a good experience for AI agents
+- **Floating loaders** - AI cannot interpret loading states
+- **Spinners** - Provide unclear feedback to AI agents
+
+### Single Page Application (SPA) Issues
+- **Too much SPA** - Makes it difficult for AI to understand page changes
+- **Lack of clear response pages** - AI needs clear navigation boundaries
+- **Dynamic content without clear indicators** - State changes must be obvious
+
+### Console-Only Information
+- **Don't assume AI will read console logs**
+- **All important information must be visible in the UI**
+- **Error states should be explicitly rendered**
+
+## Best Practices for AI-Friendly UI
+
+### Visibility and Clarity
+- Make everything visible and obvious
+- Provide immediate, in-context feedback
+- Clear response pages instead of pure SPA navigation
+- Display all critical information directly in the UI
+
+### Intelligent Adaptation
+- **Detect AI bot usage** - Know when you are being used by an AI agent
+- **Adjust UI for AI engagement** - "Personalization for robots"
+- **Accelerate AI workflows** - Remove unnecessary UI friction for bots
+
+### Error Handling
+- Show errors as they occur (real-time validation)
+- Keep errors visible (no auto-dismissing messages)
+- Provide clear, actionable error messages
+- Never hide errors below the fold
+
+## Design Philosophy
+
+Design interfaces that work well for both human and AI users. When in doubt, prioritize visibility, clarity, and immediate feedback over aesthetic flourishes.
