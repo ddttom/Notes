@@ -24,6 +24,18 @@ This is a notes repository containing coding standards, architectural guidelines
 - Core library is shareable between backend and frontend
 - Consider refactoring opportunities during development
 
+**Markdown Standards:**
+
+- Always run `npm run lint:md` before committing markdown files
+- Follow these key markdown linting rules:
+  - Add blank lines before AND after all headings
+  - Add blank lines before AND after all lists
+  - Use consistent list marker style (prefer `-` for unordered lists)
+  - Use proper heading hierarchy (don't skip levels)
+- Use `npm run lint:md:fix` to auto-fix most formatting issues
+- Configuration is in `.markdownlint.json` with project-specific overrides
+- See `markdown-lint.md` for comprehensive guide with examples
+
 ### Project Structure
 
 Standard project layout should include:
@@ -136,16 +148,18 @@ Standard project layout should include:
 The "step commit" workflow should be used for systematic commits:
 
 1. Initial git commit of changes
-2. Run lint and fix all errors
+2. Run lint and fix all errors (including `npm run lint:md:fix` for markdown files)
 3. Git commit lint fixes
 4. Check last modification dates of README.md, CLAUDE.md, and CHANGELOG.md
 5. Consider modifications to those files based on recent changes
 6. Review project documents mentioned in CLAUDE.md
-7. Git commit documentation changes
-8. Update LEARNINGS.md (contains what AI struggled to understand)
-9. Update PROJECTSTATE.md (current state, not historical)
-10. Update CHANGELOG.md
-11. Commit and push
+7. Run `npm run lint:md:fix` on any modified markdown files
+8. Git commit documentation changes
+9. Update LEARNINGS.md (contains what AI struggled to understand)
+10. Update PROJECTSTATE.md (current state, not historical)
+11. Update CHANGELOG.md
+12. Run `npm run lint:md:fix` on documentation files
+13. Commit and push
 
 **Attribution:**
 
