@@ -5,15 +5,18 @@ The "step commit" workflow ensures systematic commits with proper documentation 
 ## Step-by-Step Process
 
 ### 1. Initial Commit
+
 - Commit all current code changes
 - Use descriptive commit message
 
 ### 2. Linting
+
 - Run lint on all changed files
 - Fix all linting errors
 - Commit lint fixes separately
 
 ### 3. Documentation Review
+
 - Check last modification dates of:
   - README.md
   - CLAUDE.md
@@ -23,23 +26,28 @@ The "step commit" workflow ensures systematic commits with proper documentation 
 - Review all project documents mentioned in CLAUDE.md
 
 ### 4. Documentation Updates
+
 - Commit any documentation changes
 
 ### 5. Learning Documentation
+
 - Update or create LEARNINGS.md
 - Document everything the AI assistant struggled to understand in this session
 - This helps improve future AI interactions
 
 ### 6. Project State
+
 - Update or create PROJECTSTATE.md
 - Document current state only (not historical)
 - Keep this as a snapshot of current implementation status
 
 ### 7. Changelog
+
 - Update CHANGELOG.md with all changes made
 - Follow chronological order
 
 ### 8. Final Commit and Push
+
 - Commit changelog updates
 - Push all commits to remote
 

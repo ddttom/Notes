@@ -5,11 +5,13 @@
 ### Core Features
 
 #### Personal Expense Tracker
+
 - Track expenses per job
 - Categorize as chargeable or non-chargeable
 - Associate expenses with specific customers/jobs
 
 #### Bill of Materials (BOM)
+
 - Track materials per job
 - Associate costs with specific projects
 - Link to expense tracking
@@ -17,7 +19,9 @@
 ### Reporting and Summarization
 
 #### Summary Views
+
 Generate summaries by:
+
 - **Customer** - All expenses grouped by customer
 - **Job** - Individual job expense reports
 - **Time Period** - Monthly or quarterly summaries
@@ -26,6 +30,7 @@ Generate summaries by:
 ### Subcontracting
 
 #### Subcontract Management
+
 - Track subcontract fees
 - Apply markup to subcontract costs
 - Categorize as chargeable or non-chargeable

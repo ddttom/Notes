@@ -36,12 +36,14 @@ This repository contains coding standards, architectural guidelines, and develop
 ## Key Principles
 
 ### Architecture
+
 - **Frontend/Backend Separation**: Communication via message queue with structured GraphQL API
 - **Schema-Driven Development**: Schema index is the collaboration point between developer and AI
 - **Multi-Tenant by Design**: Each tenant has isolated database and configuration
 - **Connector Pattern**: Backend functions are modular, subscription-based connectors
 
 ### Code Quality
+
 - Simple, plain JavaScript - avoid unnecessary third-party libraries
 - Configuration over hard-coding
 - Maintainability over clever code
@@ -49,6 +51,7 @@ This repository contains coding standards, architectural guidelines, and develop
 - Shared core library between frontend and backend
 
 ### Security
+
 - SQL injection protection
 - Multi-tenant data isolation
 - Role-based admin access
@@ -56,6 +59,7 @@ This repository contains coding standards, architectural guidelines, and develop
 - Connector subscription validation
 
 ### AI-First Design
+
 - Clear, immediate feedback (no hidden errors or delayed responses)
 - Avoid animations and loaders that confuse AI agents
 - Make all information visible and obvious
@@ -68,6 +72,7 @@ If you're an AI assistant working in this codebase, please read [CLAUDE.md](CLAU
 ## Development Workflow
 
 When making changes:
+
 1. Follow the coding standards in Starter.md
 2. Implement backend changes according to Vibe coding backend.md patterns
 3. Use the step commit process from Vibe coding commit step.md

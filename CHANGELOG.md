@@ -7,6 +7,7 @@ The format follows chronological order with the most recent changes at the top.
 ## [2025-12-18] - Documentation Restructuring and Claude Code Setup
 
 ### Added
+
 - Created `.claude/` directory with Claude Code configuration
   - `commands/step-commit.md` - Step commit command definition
   - `hooks/post-tool-use.sh` - Post tool use hook
@@ -17,6 +18,7 @@ The format follows chronological order with the most recent changes at the top.
 - Created `CHANGELOG.md` - This file
 
 ### Changed
+
 - **Prd updates.md**: Restructured from bullet points into organized product requirements
   - Added sections for expense tracking, BOM, reporting, and subcontracting
   - Improved clarity and structure
@@ -55,11 +57,13 @@ The format follows chronological order with the most recent changes at the top.
 ## [2025-12-16] - Initial Documentation
 
 ### Added
+
 - Created `CLAUDE.md` with comprehensive guidelines for AI-assisted development
 - Created `README.md` with repository overview and navigation
 - Initial versions of all core documentation files
 
 ### Changed
+
 - Multiple markdown formatting updates
 - Various documentation improvements
 
