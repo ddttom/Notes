@@ -1,0 +1,144 @@
+--- old
++++ new
+@@ -1,1 +1,1 @@
+-# Vibe coding - backend
++# Backend Architecture Guidelines
+@@ -3,1 +3,1 @@
+-Make sure backend is highly modular and intermediate through a simple message queue with a very structured message api. Design this before doing any backend.
++## Core Principles
+@@ -5,1 +5,1 @@
+-All backend code must be thread safe, injection proof and may share core library with front end
++### Architecture Design
+@@ -7,1 +7,1 @@
+-Backend should be multitenant and UI agnostic. Communicating with the message api with structured json.
++Backend must be highly modular and communicate through a simple message queue with a structured message API. **Design the message API before implementing any backend code.**
+@@ -9,1 +9,1 @@
+-Each tenant has a separate dB. Avoiding leakage. Each tenant has a global Config json object. Used for Config and overriding whitelabel
++### Code Requirements
+@@ -11,1 +11,5 @@
+-The initial build of the prototype us to be dummy backend functions that return this is a dummy - to be implemented. The backend should have the current full set of actions in a schema. The index is the schema. The initial implementation is returning "to be implemented" each action should be marked #TODO.  Each api/connector/agent will log all errors to a central log. All action message will be logged to a tenant log. The tenant log should be cycled at midnight and retained for one week.
++- All backend code must be **thread-safe**
++- All backend code must be **injection-proof**
++- Backend may share core library with frontend
++- Backend should be **multi-tenant** and **UI-agnostic**
++- Communication via message API with structured JSON
+@@ -13,1 +17,1 @@
+-The connector must use a data transformation object so that the connector can be traced and debugger.
++## Multi-Tenancy
+@@ -15,1 +19,1 @@
+-All actions must be checked for sql injections or bad actor intents
++### Database Isolation
+@@ -17,1 +21,4 @@
+-Ensure that admin functions can only be used by the tenant owner, there should be possibilities of multiple owners per tenant. There will be one admin owner who can delegate access to secondary owners.
++- Each tenant has a separate database (prevents data leakage)
++- Each tenant has a global Config JSON object for:
++  - Configuration settings
++  - Whitelabel overrides
+@@ -19,1 +26,1 @@
+-The developer admin can be promoted to super admin on any tenant and perform the important tasks, with full audit logging to the admin log.
++### Access Control
+@@ -21,1 +28,5 @@
+-A separate action channel should be created for the tenant and the developer allowing administration commands and dashboard. Initial implementation is to be as dummy with todo
++- Multiple owners possible per tenant
++- One admin owner can delegate access to secondary owners
++- Admin functions restricted to tenant owners only
++- Developer admin can be promoted to super admin on any tenant
++- All super admin actions require full audit logging
+@@ -23,1 +34,1 @@
+-the developer will focus one by one on each backend function. And send separate instructions
++## Prototype Development Strategy
+@@ -25,1 +36,1 @@
+-There must be an index of backend functions and the state and of each, dummy, erroring, under Dev, potential release, under user test and release., also reverted.
++### Initial Implementation
+@@ -27,1 +38,4 @@
+-Connectors are used by by the backend, not the front end. Connectors can only be executed if the tenant has subscribed to the connector. The connector will return a not subscribed error, this should be passed back to the caller. These functions must be described in the index. The developed will have a route for handling not subscribed and will produce better messaging to the end user
++1. Create dummy backend functions returning "to be implemented"
++2. Define full set of actions in schema (the index IS the schema)
++3. Mark each action with #TODO
++4. Initial implementation returns "to be implemented" message
+@@ -29,1 +43,1 @@
+-The system must track and release these functions according to the users request. Create a folder of potential backend and a build process that allows the developer to select what will be released to the environment. We will have local Dev. Local test, local qa. Hosted test. Hosted live.
++### Iterative Development
+@@ -31,0 +45,82 @@
++- Developer focuses on one backend function at a time
++- Separate instructions provided for each function implementation
++
++## Logging Architecture
++
++### Central Error Log
++
++- All API/connector/agent errors logged centrally
++
++### Tenant Log
++
++- All action messages logged to tenant-specific log
++- Logs cycled daily at midnight
++- Logs retained for one week
++
++### Admin Log
++
++- Separate action channel for tenant and developer administration
++- Dashboard and administration commands
++- Full audit trail for admin operations
++
++## Connector System
++
++### Connector Rules
++
++- Connectors used by backend only (not frontend)
++- Connectors can only execute if tenant has subscribed
++- Return "not subscribed" error if tenant lacks subscription
++- Error should be passed back to caller
++- All connectors described in the index
++
++### Data Transformation
++
++- Connectors must use data transformation objects
++- Enables tracing and debugging capabilities
++
++### Error Handling
++
++- Developer implements route for handling "not subscribed" errors
++- Produces user-friendly messaging to end users
++
++## Security
++
++### Input Validation
++
++- All actions must be checked for SQL injections
++- All actions must be checked for bad actor intents
++- Never trust user input
++
++## Function State Tracking
++
++### State Management
++
++Maintain an index of all backend functions with their current state:
++
++- **dummy** - Placeholder implementation
++- **erroring** - Has known errors
++- **under dev** - Actively being developed
++- **potential release** - Ready for testing consideration
++- **under user test** - Being tested by users
++- **release** - Deployed to production
++- **reverted** - Rolled back from production
++
++## Build and Deployment
++
++### Environment Structure
++
++Create separate deployment environments:
++
++- Local Dev
++- Local Test
++- Local QA
++- Hosted Test
++- Hosted Live
++
++### Build Process
++
++- Maintain folder of potential backend code
++- Build process allows developer to select functions for release
++- Track and release functions according to user requests
++- Selective deployment based on function state
++

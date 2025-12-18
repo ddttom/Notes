@@ -1,0 +1,119 @@
+--- old
++++ new
+@@ -1,1 +1,1 @@
+-# Starter
++# Project Starter Guidelines
+@@ -3,1 +3,1 @@
+-Always have a design rules, whitelabelable. Button shapes sizes. Breakpoints.
++## Design System
+@@ -5,1 +5,1 @@
+-Coding standards
++### Whitelabel Requirements
+@@ -7,1 +7,4 @@
+-Simple plain javascript. Do not add third party  libraries without the users explicit permission
++- Maintain design rules that are whitelabelable
++- Define button shapes and sizes
++- Define responsive breakpoints
++- Use EDS shim with plusplus additions
+@@ -9,1 +12,1 @@
+-Css 3 with variable, master styles. Block level additions and changes. Block level must know about master.
++## Coding Standards
+@@ -11,1 +14,1 @@
+-Config variables at top of code. No hard coded text or constants.
++### JavaScript
+@@ -13,1 +16,4 @@
+-Commenting rules must be added
++- Use simple, plain JavaScript
++- **Do not add third-party libraries without explicit user permission**
++- Simplicity over complexity
++- Maintainability over clever code
+@@ -15,1 +21,1 @@
+-Look for opportunity to add to core library when functions are shared. Simplicity over complexity. Maintainability over clever code.
++### CSS
+@@ -17,1 +23,4 @@
+-Create two folders. Frontend and backend.
++- CSS3 with variables
++- Use master styles
++- Block-level additions and changes must be aware of master styles
++- Block-level components must reference master styles
+@@ -19,1 +28,1 @@
+-Create message q folder, msg q implementation should be graphql with action commands. The front end should not have knowledge of which connectors are in use, just knows that connectors are available and the expected schema
++### Code Organization
+@@ -21,1 +30,4 @@
+-The backend should not know what the front end will do with result. It strictly follows the schema. The schema index is where the developer and the AI collaborate to  build the APIs, the msq q and the connectors.
++- Configuration variables at top of code
++- **No hard-coded text or constants**
++- Look for opportunities to add shared functions to core library
++- Core library is shareable between backend and frontend
+@@ -23,1 +35,1 @@
+-Create api folder
++### Commenting
+@@ -25,1 +37,1 @@
+-We want to avoid sql migration problems use a no-sql dB approach
++- Commenting rules must be added (TODO: Define standard)
+@@ -27,1 +39,1 @@
+-Consider a Refactoring command
++## Project Structure
+@@ -29,1 +41,1 @@
+-Attribution in git
++### Required Folders
+@@ -31,1 +43,1 @@
+-Core library is shareable between back end  and front end
++#### 1. Frontend
+@@ -33,1 +45,3 @@
+-Use EDS shim
++- Frontend application code
++- Should not have knowledge of which connectors are in use
++- Only knows that connectors are available and the expected schema
+@@ -35,1 +49,1 @@
+-Add plusplus to shim.
++#### 2. Backend
+@@ -37,0 +51,48 @@
++- Backend services and APIs
++- Should not know what the frontend will do with results
++- Strictly follows the schema
++- UI-agnostic implementation
++
++#### 3. Message Queue (msg-q)
++
++- Message queue implementation using GraphQL with action commands
++- Frontend communicates through this layer
++- Backend processes messages through this layer
++
++#### 4. API
++
++- API definitions and schema
++- **The schema index is where developer and AI collaborate to build APIs**
++- Message queue and connectors communicate through this layer
++
++#### 5. Core Library
++
++- Shared utilities and functions
++- Shareable between backend and frontend
++- Repository for common functionality
++
++## Frontend-Backend Separation
++
++### Communication Principles
++
++- Frontend only knows connectors are available and expected schema
++- Backend strictly follows schema without UI knowledge
++- Schema index is the collaboration point between developer and AI
++
++## Database Approach
++
++- Use NoSQL database approach to avoid SQL migration problems
++- Provides flexibility and easier schema evolution
++
++## Development Practices
++
++### Git Attribution
++
++- Ensure proper attribution in all git commits
++- Especially important for AI-assisted code
++
++### Refactoring
++
++- Consider implementing a refactoring command
++- Regularly review opportunities to improve code structure
++

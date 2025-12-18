@@ -1,0 +1,10 @@
+--- old
++++ new
+@@ -1,1 +1,1 @@
+-Starter
++# Starter
+@@ -15,1 +15,1 @@
+-Look for opportunity to add to core library when functions are shared. Simplicity over complexity. Maintanability over clever code.
++Look for opportunity to add to core library when functions are shared. Simplicity over complexity. Maintainability over clever code.
+@@ -36,0 +36,1 @@
++

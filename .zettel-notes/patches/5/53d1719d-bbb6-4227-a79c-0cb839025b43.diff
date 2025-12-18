@@ -1,0 +1,38 @@
+--- old
++++ new
+@@ -1,1 +1,1 @@
+-# To do
++# Development Todo
+@@ -3,1 +3,1 @@
+-Add Git ignore to agentsetup
++## Infrastructure Setup
+@@ -5,1 +5,4 @@
+-Add agent setup to notes
++- [ ] Add .gitignore to agentsetup
++- [ ] Add agent setup to notes
++- [ ] Add symlink to agentsetup for notes
++- [ ] Add agentsetup to bin
+@@ -7,1 +10,1 @@
+-Add symlink to agentsetup for notes
++## Security and Testing Tools
+@@ -9,2 +12,1 @@
+-Add agentsetup to bin
+-Invest in gate semgrep and codeql. Owasp zap
++### Security Scanning
+@@ -12,1 +14,4 @@
+-Use postman like to test.
++- [ ] Investigate and implement Gate
++- [ ] Investigate and implement Semgrep
++- [ ] Investigate and implement CodeQL
++- [ ] Investigate and implement OWASP ZAP
+@@ -14,1 +19,1 @@
+-Review code in a separate AI
++### API Testing
+@@ -16,0 +21,7 @@
++- [ ] Set up Postman-like tool for API testing
++- [ ] Create test collections for common API endpoints
++
++## Code Quality
++
++- [ ] Set up separate AI for code review process
++
