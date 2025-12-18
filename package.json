@@ -1,0 +1,15 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "This repository contains coding standards, architectural guidelines, and development practices for building AI-friendly web applications with a focus on maintainability, security, and multi-tenant architecture.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "markdownlint-cli": "^0.47.0"
+  }
+}
