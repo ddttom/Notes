@@ -27,24 +27,41 @@ This document captures the current state of the notes repository (current status
 
 - **LEARNINGS.md** - AI learning notes
 - **PROJECTSTATE.md** - This file
+- **CHANGELOG.md** - Change tracking
 - **.claude/** directory - Claude Code configuration
+- **markdown-lint.md** - Comprehensive markdown linting guide
 
-### Missing
+### Markdown Linting System (NEW)
 
-- **CHANGELOG.md** - To be created
+- **markdownlint-cli** installed via npm
+- **.markdownlint.json** - Linting configuration
+- **.markdownlintignore** - Files to exclude
+- **npm scripts**: `lint:md` and `lint:md:fix`
+- **Claude Code integration**:
+  - `/md-fix` command for quick linting
+  - `md-fix` skill for automated workflow
+  - `pre-commit.sh` hook to check markdown before commits
+- **All markdown files** now pass linting with zero errors
 
 ## Recent Changes
 
-2025-12-18: Restructured all documentation from terse bullet points into well-organized, structured documents with clear headers and expanded explanations.
+**2025-12-18 (Latest)**: Added comprehensive markdown linting system with markdownlint-cli, configuration files, AI assistant guide, Claude Code command/skill/hook integration. All markdown files fixed and passing linting.
+
+**2025-12-18 (Earlier)**: Restructured all documentation from terse bullet points into well-organized, structured documents with clear headers and expanded explanations.
 
 ## Outstanding Tasks
 
 From Todo.md:
 
-- Infrastructure: agentsetup, .gitignore, symlinks
+- Infrastructure: agentsetup, symlinks
 - Security: Gate, Semgrep, CodeQL, OWASP ZAP
 - Testing: Postman-like API testing tools
 - Code Quality: Separate AI for code review
+
+**Completed**:
+
+- ✅ .gitignore (added to ignore node_modules, .claude/settings.local.json)
+- ✅ Markdown linting (markdownlint-cli with full integration)
 
 ## Repository Philosophy
 
