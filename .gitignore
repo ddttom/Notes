@@ -17,3 +17,8 @@ Thumbs.db
 # Environment
 .env
 .env.local
+
+# symlinks for AI tools
+.agents/
+GEMINI.md
+AGENTS.md
