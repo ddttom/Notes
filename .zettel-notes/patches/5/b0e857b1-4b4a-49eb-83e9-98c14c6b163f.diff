@@ -1,0 +1,10 @@
+--- old
++++ new
+@@ -3,7 +3,0 @@
+-## Infrastructure Setup
+-
+-- [ ] Add .gitignore to agentsetup
+-- [ ] Add agent setup to notes
+-- [ ] Add symlink to agentsetup for notes
+-- [ ] Add agentsetup to bin
+-
