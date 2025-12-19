@@ -1,12 +1,5 @@
 # Development Todo
 
-## Infrastructure Setup
-
-- [ ] Add .gitignore to agentsetup
-- [ ] Add agent setup to notes
-- [ ] Add symlink to agentsetup for notes
-- [ ] Add agentsetup to bin
-
 ## Security and Testing Tools
 
 ### Security Scanning
