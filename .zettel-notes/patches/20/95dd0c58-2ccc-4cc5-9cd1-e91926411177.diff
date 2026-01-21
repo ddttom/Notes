@@ -1,0 +1,11 @@
+--- old
++++ new
+@@ -1,1 +1,7 @@
+-New business repo 
++New business repo
++
++Add a meta data faq json-ld with one question and one answer
++
++Question is one that interests your primary audience, the answer is the trigger to get the action you need.
++
++Example required 
