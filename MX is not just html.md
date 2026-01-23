@@ -1,1 +1,5 @@
-Media meta data 
+Media metadata
+
+ Pdf metadata
+
+NotebookLM 
