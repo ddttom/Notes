@@ -1,0 +1,13 @@
+--- old
++++ new
+@@ -3,1 +3,1 @@
+-The registry requires proof of ownership and authority. Business users must pay 100 per year per card plus a signed account which is tied to their domain name via a token
++The registry requires proof of ownership and authority. Business users must pay 100 per year per card plus a signed account, which is tied to their domain name via a token
+@@ -5,1 +5,1 @@
+-Open source users must have the token on github or similar. Pricing is much cheaper. To encourage use.
++Open-source users must have the token on GitHub or a similar service. Pricing is much cheaper. To encourage use.
+@@ -9,1 +9,3 @@
+- A qr code on any poster, sign, bus stop, and premise, blue plaque or whatever can link to the website to give context or an MX-card for instructions or feedback 
++ A QR code on any poster, sign, bus stop, premise, blue plaque or whatever can link to the website to give context or an MX-card for instructions or feedback
++
++We need an app
