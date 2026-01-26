@@ -1,0 +1,15 @@
+--- old
++++ new
+@@ -22,1 +22,1 @@
+-Schedule time limited and encryptedcards fist more 
++Schedule time-limited and encrypted cards cost more 
+@@ -24,1 +24,1 @@
+-App has an on board card with the owner's personal identity layer. 
++App has an on-board card with the owner's personal identity layer. Card can stay on the phone 
+@@ -26,1 +26,1 @@
+-Cards can be shared with agents and Chatbots 
++Cards can be shared with agents and Chatbots. Cards can be encrypted and have authorised tokens with access levels 
+@@ -28,0 +28,1 @@
++QR codes everywhere 
+@@ -30,0 +31,1 @@
++
