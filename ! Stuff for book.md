@@ -27,4 +27,8 @@ Cards can be shared with agents and Chatbots. Cards can be encrypted and have au
 
 QR codes everywhere 
 
+Machines are robots, phones, cars, and LLMs
+
+The identity layer is a layer of identity. It contains menu preferences for use with a menu card. It contains allergies, which are inherited from and inform the menu. Etc
+
 
