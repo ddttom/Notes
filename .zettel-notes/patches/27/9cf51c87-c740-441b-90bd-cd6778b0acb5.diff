@@ -1,0 +1,16 @@
+--- old
++++ new
+@@ -14,1 +14,2 @@
+-Permission guards can be added to any facet of the identity layer
++Permission guards can be added to any facet of the identity layer.
++AI agents are not told why access to a facet is denied. The user can adjust permissions at will, and agents may not even know if an identity layer exists 
+@@ -16,0 +17,1 @@
++Identity layers must be portable. Signed secure transfer to a backup. Or to an owner's new phone or laptop. Identity layers can be globally deleted by a signed application 
+@@ -17,0 +19,7 @@
++An adult can create identity layers for children. 
++
++Child identity layers can inherit from the parent. 
++
++Business facets in an identity area can be inherited from the business identity layer, an employee is effectively a child of the business 
++
++
