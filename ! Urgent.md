@@ -9,6 +9,5 @@ Script new digital twin creation
 Script digital twin hardening
 Monetise, sponsor, and grants
 Use acl in. MX.yaml
-Dynamic project plan for my digital assistant
-Assistant needs GitHub access to the notes repo
-. 
+Deaf and blind people's MX cards on a journey
+Worldview for robots
