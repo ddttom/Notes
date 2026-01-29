@@ -1,0 +1,8 @@
+--- old
++++ new
+@@ -16,1 +16,1 @@
+-All about can serve yaml or HTML or md
++All about can serve YAML, HTML, or md
+@@ -18,0 +18,2 @@
++All about app. Subscribe to the topic
++

@@ -11,3 +11,8 @@ Monetise, sponsor, and grants
 Use acl in. MX.yaml
 Deaf and blind people's MX cards on a journey
 Worldview for robots
+
+Unoverridable attributes in yaml
+All about can serve YAML, HTML, or md
+
+All about app. Subscribe to the topic
