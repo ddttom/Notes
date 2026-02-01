@@ -1,0 +1,11 @@
+--- old
++++ new
+@@ -4,1 +4,1 @@
+-As you enter a premise with a beacon that is unknown to your app, and the identity layer allows notifications, the app will ask if you want to enable the MX-card. If you say yes, the identity layer searches your data for a matching set; if not, it downloads the default data from the venue. The user can adjust it to add inheritance or change options.
++When you enter a premise with an unknown beacon, and the identity layer allows notifications, the app will ask whether you want to enable the MX-card. If you say yes, the identity layer searches your data for a matching set; if not, it downloads the default data from the venue. The user can adjust it to add inheritance or change options.
+@@ -23,1 +23,1 @@
+-Business facets in an identity area can be inherited from the business identity layer, an employee is effectively a child of the business 
++Business facets in an identity area can be inherited from the business identity layer; an employee is effectively a child of the business 
+@@ -26,0 +26,2 @@
++Physical device can be identitt layer clone
++
