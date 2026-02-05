@@ -1,7 +1,7 @@
 Recipes
 Tables in a restaurant
 
-When you enter a premise with an unknown beacon, and the identity layer allows notifications, the app will ask whether you want to enable the MX-card. If you say yes, the identity layer searches your data for a matching set; if not, it downloads the default data from the venue. The user can adjust it to add inheritance or change options.
+As you enter a premise with a beacon that is unknown to your app, and the identity layer allows notifications, the app will ask if you want to enable the MX-card. If you say yes, the identity layer searches your data for a matching set; if not, it downloads the default data from the venue. The user can adjust it to add inheritance or change options.
 
 This way, a museum can offer a default route through the premises. Or a menu of routes.
 
@@ -20,7 +20,5 @@ An adult can create identity layers for children.
 
 Child identity layers can inherit from the parent. 
 
-Business facets in an identity area can be inherited from the business identity layer; an employee is effectively a child of the business 
+Business facets in an identity area can be inherited from the business identity layer, an employee is effectively a child of the business 
 
-
-Physical device can be identitt layer clone

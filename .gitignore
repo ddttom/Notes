@@ -26,3 +26,6 @@ AGENTS.md
 # Scrap folder (temporary notes and drafts - READ-ONLY REFERENCE)
 scrap/*
 !scrap/.gitkeep
+
+# Obsolete MX format (use .mx.yaml.md instead)
+.mx.yaml
