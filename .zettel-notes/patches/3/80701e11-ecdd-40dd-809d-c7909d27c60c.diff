@@ -1,0 +1,13 @@
+--- old
++++ new
+@@ -1,0 +1,10 @@
++---
++title: "Git Workflow: Step Commit Process"
++description: "Systematic commit workflow with linting, testing, and documentation checks"
++author: Tom Cranstoun
++created: 2025-12-15
++modified: 2026-02-09
++version: "1.0"
++status: draft
++---
++

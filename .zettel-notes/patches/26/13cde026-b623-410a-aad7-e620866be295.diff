@@ -1,0 +1,13 @@
+--- old
++++ new
+@@ -1,0 +1,10 @@
++---
++title: "Stuff for the Book"
++description: "Raw ideas for book content including registry, QR codes, apps, and MX-card scenarios"
++author: Tom Cranstoun
++created: 2025-12-15
++modified: 2026-02-09
++version: "1.0"
++status: draft
++---
++

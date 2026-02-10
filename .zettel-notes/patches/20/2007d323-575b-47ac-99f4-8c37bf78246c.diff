@@ -1,0 +1,13 @@
+--- old
++++ new
+@@ -1,0 +1,10 @@
++---
++title: "Restructuring Notes"
++description: "Quick notes on repo restructuring, FAQ JSON-LD patterns, and date format issues"
++author: Tom Cranstoun
++created: 2025-12-15
++modified: 2026-02-09
++version: "1.0"
++status: draft
++---
++

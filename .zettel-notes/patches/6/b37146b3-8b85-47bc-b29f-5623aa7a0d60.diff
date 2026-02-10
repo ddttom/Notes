@@ -1,0 +1,13 @@
+--- old
++++ new
+@@ -1,0 +1,10 @@
++---
++title: "Backend Architecture Guidelines"
++description: "Core principles for modular, thread-safe, multi-tenant backend architecture"
++author: Tom Cranstoun
++created: 2025-12-15
++modified: 2026-02-09
++version: "1.0"
++status: draft
++---
++
