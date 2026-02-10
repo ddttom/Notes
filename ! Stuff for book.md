@@ -1,3 +1,13 @@
+---
+title: "Stuff for the Book"
+description: "Raw ideas for book content including registry, QR codes, apps, and MX-card scenarios"
+author: Tom Cranstoun
+created: 2025-12-15
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 Stuff for the book
 
 The registry requires proof of ownership and authority. Business users must pay 100 per year per card plus a signed account, which is tied to their domain name via a token

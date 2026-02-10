@@ -1,3 +1,13 @@
+---
+title: "Markdown Linting Guide for AI Assistants"
+description: "Reference guide for writing markdown that passes markdownlint rules in this project"
+author: Tom Cranstoun
+created: 2025-12-15
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 # Markdown Linting Guide for AI Assistants
 
 This guide explains how to write markdown files that pass the markdownlint rules configured in this project.

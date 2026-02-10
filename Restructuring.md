@@ -1,3 +1,13 @@
+---
+title: "Restructuring Notes"
+description: "Quick notes on repo restructuring, FAQ JSON-LD patterns, and date format issues"
+author: Tom Cranstoun
+created: 2025-12-15
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 New business repo
 
 Add a meta data faq json-ld with one question and one answer

@@ -1,3 +1,13 @@
+---
+title: "Changelog"
+description: "Chronological record of notable changes to the notes repository"
+author: Tom Cranstoun
+created: 2025-12-15
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 # Changelog
 
 All notable changes to this project will be documented in this file.

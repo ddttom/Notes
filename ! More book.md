@@ -1,3 +1,13 @@
+---
+title: "More Book Ideas"
+description: "Brainstorm notes on MX-card scenarios including recipes, venues, and identity layers"
+author: Tom Cranstoun
+created: 2025-12-15
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 Recipes
 Tables in a restaurant
 

@@ -1,3 +1,13 @@
+---
+title: "Product Requirements: Feature Updates"
+description: "Feature requirements for expense tracking, bill of materials, and job management"
+author: Tom Cranstoun
+created: 2025-12-15
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 # Product Requirements - Feature Updates
 
 ## Expense Tracking System

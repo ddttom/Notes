@@ -1,3 +1,13 @@
+---
+title: "AI Assistant Configuration"
+description: "AI assistant guidance for the notes repository covering coding standards and philosophy"
+author: Tom Cranstoun
+created: 2025-12-15
+modified: 2026-02-09
+version: "1.0"
+status: active
+---
+
 # CLAUDE.md
 
 This file provides guidance to AI Assistants when working with code in this repository.

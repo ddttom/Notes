@@ -1,3 +1,13 @@
+---
+title: "Development Todo"
+description: "Task list for security scanning, API testing, and development tooling setup"
+author: Tom Cranstoun
+created: 2025-12-15
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 # Development Todo
 
 ## Security and Testing Tools

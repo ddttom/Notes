@@ -1,3 +1,13 @@
+---
+title: "Git Workflow: Step Commit Process"
+description: "Systematic commit workflow with linting, testing, and documentation checks"
+author: Tom Cranstoun
+created: 2025-12-15
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 # Git Workflow - Step Commit Process
 
 The "step commit" workflow ensures systematic commits with proper documentation and quality checks.
